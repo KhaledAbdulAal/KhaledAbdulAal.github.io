@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled AbdulAal | Data Analyst Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { text-align: center; padding: 80px 20px 60px; border-bottom: 1px solid var(--border); }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; letter-spacing: -0.5px; }
+        header h2 { font-size: 1.3rem; color: var(--accent); font-weight: 500; margin-bottom: 20px; }
+        header p { max-width: 650px; margin: 0 auto 30px; color: var(--text-muted); font-size: 1.05rem; }
+        
+        /* Buttons & Links */
+        .social-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.2s; font-size: 0.95rem; }
+        .btn-primary { background-color: var(--accent); color: #0f172a; }
+        .btn-primary:hover { background-color: var(--accent-hover); color: #fff; }
+        .btn-outline { border: 1px solid var(--border); color: var(--text-main); }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* Skills Section */
+        section { padding: 60px 0; border-bottom: 1px solid var(--border); }
+        .section-title { font-size: 1.8rem; margin-bottom: 30px; text-align: center; }
+        .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+        .skill-tag { background: var(--card-bg); border: 1px solid var(--border); padding: 8px 18px; border-radius: 20px; font-size: 0.95rem; color: var(--accent); font-weight: 500; }
+
+        /* Projects Section */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .project-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .project-tag { font-size: 0.8rem; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 8px; display: block; }
+        .project-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
+        .project-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; }
+        .kpi-highlights { background: rgba(15, 23, 42, 0.6); border-left: 3px solid var(--accent); padding: 10px 14px; margin-bottom: 18px; font-size: 0.88rem; color: #e2e8f0; border-radius: 0 6px 6px 0; }
+        .project-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+        .project-tools span { background: rgba(56, 189, 248, 0.1); color: var(--accent); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Khaled AbdulAal</h1>
+            <h2>Data Analyst | Business Intelligence & Reporting</h2>
+            <p>Transforming raw data into actionable business insights using Excel, SQL, Power BI, and Python. Experienced in data cleaning, KPI modeling, and building interactive executive dashboards.</p>
+            <div class="social-links">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/KhaledAbdulAal" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/khaled-abdul-aal-b20762246/" target="_blank" class="btn btn-outline">LinkedIn</a>
+                <a href="mailto:khaldbdalal370@gmail.com" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Microsoft Excel (PivotTables, XLOOKUP, Power Query)</span>
+                <span class="skill-tag">SQL (SQL Server, T-SQL, Database Design)</span>
+                <span class="skill-tag">Power BI (DAX, Data Modeling, Dashboards)</span>
+                <span class="skill-tag">Python (Pandas, Matplotlib, EDA)</span>
+                <span class="skill-tag">Data Cleaning & Executive Reporting</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: EG-SALES Excel -->
+                <div class="project-card">
+                    <div>
+                        <span class="project-tag">Microsoft Excel · Case Study</span>
+                        <h3>EG-SALES: 2025 E-commerce Sales & Profitability Analysis</h3>
+                        <p>End-to-end analysis of ~6,000 Egyptian e-commerce orders to diagnose why profit growth lagged behind revenue. Resolved 17 data quality issues and built an interactive dashboard with an executive presentation.</p>
+                        <div class="kpi-highlights">
+                            <strong>Key Impact:</strong> Evaluated <strong>4.97M EGP</strong> Net Revenue (<strong>29.20%</strong> margin), uncovered high return hotspots in Upper Egypt & Fashion (~25%), and exposed discount margin erosion.
+                        </div>
+                        <div class="project-tools">
+                            <span>Excel</span>
+                            <span>17-Step Data Cleaning</span>
+                            <span>PivotTables</span>
+                            <span>Slicers & Timeline</span>
+                            <span>Executive Deck</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/KhaledAbdulAal/KhaledAbdulAal.github.io/tree/main/Projects/Excel/E-commerce%20Sales%20Analysis%20%E2%80%94%20Egyptian%20Retail%20Market%20(2025)" target="_blank" class="btn btn-primary" style="text-align: center;">Explore Dashboard & Report →</a>
+                </div>
+
+                <!-- Placeholder for Next Project (SQL / Power BI) -->
+                <div class="project-card" style="opacity: 0.7; border-style: dashed;">
+                    <div>
+                        <span class="project-tag">Power BI / SQL · Coming Soon</span>
+                        <h3>Next Data Analytics Case Study</h3>
+                        <p>Currently preparing my upcoming Power BI & SQL data modeling project. Stay tuned for interactive KPIs, DAX measures, and business recommendations.</p>
+                        <div class="project-tools">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                    <span class="btn btn-outline" style="text-align: center; cursor: default;">In Progress</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Khaled AbdulAal. Built with GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
